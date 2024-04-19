@@ -36,27 +36,25 @@ Evaluation Metrics: Accuracy scores and classification reports are generated to 
   * XGBoost: Accuracy - 95.65%
   * AdaBoost: Accuracy - 93.24%
 
-Model Comparison: XGBoost outperforms other models with the highest accuracy of 95.65%. It demonstrates robust performance in predicting loan defaults, followed closely by the Random Forest model. However, if we take a look at 
+Model Comparison: XGBoost outperforms other models with the highest accuracy of 95.65%. It demonstrates robust performance in predicting loan defaults, followed closely by the Random Forest model. However, we take a deeper look at the below classification reports outline below for the two highest performing models. We do see a slightly higher precision score when it comes to correctly classifying faulted loans in the random forest model versus the XGBoost model. As we are concerned only with the ability the prevent risk (true positives) and not concerned with the true negatives rate, we will elect to utilize the random forest model.  
 
 Random Forest
-Accuracy: 0.9468599033816425
 Classification Report:
                precision    recall  f1-score   support
 
            0       0.95      0.98      0.97       318
-           1      ** 0.94  **    0.82      0.88        96
+           1       0.94      0.82      0.88        96
 
 
 XGBoost
-Accuracy: 0.9565217391304348
 Classification Report:
                precision    recall  f1-score   support
 
            0       0.96      0.98      0.97       318
-           1       **0.93 **     0.88      0.90        96
+           1       0.93      0.88      0.90        96
 
 
 
 ## 5. Conclusion
 
-The project successfully demonstrates the application of machine learning techniques in predicting home loan defaults. The XGBoost model stands out at first as the most effective model for this task, providing valuable insights for financial institutions in assessing credit risk and making informed lending decisions. However, due to its possibility for higher overfitting and its lower precision score in comparison to the random forest model, I would choose to utilize the random forest model in practice.
+The project successfully demonstrates the application of machine learning techniques in predicting home loan defaults. The XGBoost model stands out at first as the most effective model for this task, providing valuable insights for financial institutions in assessing credit risk and making informed lending decisions. However, due to its possibility for higher overfitting and its lower precision score in comparison to the random forest model, I would choose to utilize the random forest model in practice. If possible, testing these models further on a larger amount of unseen data would also enhance our confidence in the model's performance.
