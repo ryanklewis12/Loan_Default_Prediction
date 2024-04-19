@@ -14,7 +14,7 @@ Data Source: The dataset consists of anonymized loan data including various feat
 
 https://www.kaggle.com/datasets/joebeachcapital/loan-default/data
 
-Data Cleaning: Null values are handled by dropping rows with missing values. Categorical variables are encoded using Label Encoding, and percentage strings are converted to numerical values.
+Data Cleaning: Null values are handled by dropping rows with missing values. Categorical variables are encoded using Label Encoding, and percentage strings are converted to numerical values. Personal identification information is also dropped from the features data to exclude any bias that may exist in these.
 
 Feature Engineering: Features such as term and employment length are converted to numerical values. Feature scaling is performed to scale the features between 0 and 1 to improve model performance.
 
