@@ -1,6 +1,6 @@
 # Loan_Default_Prediction
 
-This porject seeks to use anonymized loan default data and machine learning to predict if a loan will default.
+This project seeks to use anonymized loan default data and machine learning to predict if a loan will default.
 
 
 ## 1. Problem Statement
