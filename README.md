@@ -2,8 +2,6 @@
 
 This porject seeks to use anonymized loan default data and machine learning to predict if a loan will default.
 
-https://www.kaggle.com/datasets/joebeachcapital/loan-default/data
-
 
 ## 1. Problem Statement
 
